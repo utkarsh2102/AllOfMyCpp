@@ -3,7 +3,7 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    char helloworld[] = "Hello, World!";
-    cout << helloworld <<endl;
+    char helloWorld[] = "Hello, World!";            // what's the point of doing simple things? :P
+    cout << helloWorld <<endl;
     return 0;
 }

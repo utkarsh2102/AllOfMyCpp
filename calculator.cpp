@@ -1,22 +1,22 @@
 #include<iostream>
 using namespace std;
 
-int add (int a, int b)
+inline int add (int a, int b)                       // using inline function
 {
     return a+b;
 }
 
-int subtract (int a, int b)
+inline int subtract (int a, int b)                  // using inline function
 {
     return a-b;
 }
 
-int multiply (int a, int b)
+inline int multiply (int a, int b)                  // using inline function
 {
     return a*b;
 }
 
-int divide (int a, int b)
+inline int divide (int a, int b)                    // using inline function
 {
     return a/b;
 }

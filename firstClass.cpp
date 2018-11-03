@@ -1,29 +1,31 @@
 #include<iostream>
 using namespace std;
 
-class introduction
+class introduction                                          // defining a class
 {
-    char name[20];
+    char name[20];                                          // private data members of the class
     int age;
 
     public: 
-        void getdata();
+        void getdata();                                     // public member functions of the class
         void putdata();
 };
 
-void introduction :: getdata()
+void introduction :: getdata()                              // defining the scope of the function w.r.t. class
 {
     cout << "Enter your name: ";
-    cin >> name;
+    cin >> name;                                            // accessing private data members through.. 
     cout << "Enter your age: ";
-    cin >> age;
+    cin >> age;                                             // ..public member functions   
 }
 
 void introduction :: putdata()
 {
     cout << "What's up, " << name << "?\n";
 
-    if (age < 19)
+    if (age < 13)
+        cout << "Are you even born yet?" << endl;
+    else if (age > 12 && age < 19)
         cout << "Eh, a teenager? You are just " << age << ". Grow up, kid!.\n";
     else if (age > 18 && age < 30)
         cout << "Oo, a young lad there! So you're " << age << ", haan? Sweet.\n";
@@ -35,8 +37,8 @@ void introduction :: putdata()
 
 int main (int argc, char *argv[])
 {
-    introduction intro;
-    intro.getdata();
+    introduction intro;                                     // creating an object "intro" of the class
+    intro.getdata();                                        // function calling    
     intro.putdata();
     return 0;
 }
